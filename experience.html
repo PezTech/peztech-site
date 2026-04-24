@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Professional experience and technical skills for Will Perry at PezTech." />
+  <meta name="description" content="Professional experience and selected technical work for Will Perry at PezTech." />
   <title>PezTech | Experience</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -24,74 +24,69 @@
   </header>
 
   <main>
+
+    <!-- Header -->
     <section class="page-header">
       <div class="container narrow">
         <p class="eyebrow">Experience</p>
-        <h1>Professional background</h1>
+        <h1>Selected Work</h1>
         <p class="lead">
-          Senior IT support, Microsoft cloud administration, endpoint management and project delivery across SME environments.
+          A selection of projects and technical challenges I’ve delivered across Microsoft 365, endpoint management, and infrastructure.
         </p>
 
+        <p style="margin-top: 15px;">
+          <a class="button" href="files/Will-Perry-CV.pdf" target="_blank">
+            Download CV
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Case Studies -->
     <section class="section">
       <div class="container narrow">
 
-        <div class="card timeline-item">
-          <h2>Traffic Group Signals</h2>
-          <p><strong>Senior IT Support Engineer</strong></p>
-          <p class="muted">April 2020 – Present</p>
-          <ul>
-            <li>Deliver support and technical projects across a 200-user business.</li>
-            <li>Administer Microsoft 365 services including Exchange Online, Teams and SharePoint.</li>
-            <li>Manage Entra ID including user lifecycle, MFA and Conditional Access.</li>
-            <li>Deploy and manage Intune for configuration, compliance and application deployment.</li>
-            <li>Support endpoint provisioning and Windows lifecycle management.</li>
-            <li>Provide 2nd/3rd line support across devices, cloud services and networking.</li>
-            <li>Work with external vendors and MSPs to deliver projects and resolve escalations.</li>
-            <li>Maintain technical documentation and improve operational processes.</li>
-          </ul>
+        <h2>Case Studies</h2>
+
+        <div class="card">
+          <h3>SolidWorks PDM Migration to Azure</h3>
+          <p><strong>Environment:</strong> On-prem → Azure VPC</p>
+          <p><strong>Problem:</strong> Clients could not connect to the PDM service despite successful RDP and network access.</p>
+          <p><strong>What I did:</strong> Led troubleshooting across internal teams and third-party support. Analysed device configuration and network traffic using Wireshark and Intune policy review.</p>
+          <p><strong>Outcome:</strong> Identified a firewall policy mismatch causing inconsistent behaviour between wired and wireless connections and restored full service connectivity.</p>
         </div>
 
-        <div class="card timeline-item">
-          <h2>Reform IT</h2>
-          <p><strong>Project Engineer / Support Engineer</strong></p>
-          <p class="muted">May 2019 – April 2020</p>
-          <ul>
-            <li>Delivered project and escalated support work across customer environments.</li>
-            <li>Supported Microsoft 365 environments, infrastructure deployments and general client support.</li>
-            <li>Provided both on-site and remote technical support.</li>
-          </ul>
+        <div class="card">
+          <h3>Microsoft 365 Tenant Migration (75 Devices)</h3>
+          <p><strong>Environment:</strong> Hybrid → Entra ID (cloud-only)</p>
+          <p><strong>Problem:</strong> Required migration of all user devices to a new Microsoft 365 tenant following consolidation.</p>
+          <p><strong>What I did:</strong> Created a full migration plan including device audit, lifecycle assessment, and user scheduling. Rebuilt and enrolled devices using Intune and OneDrive backups.</p>
+          <p><strong>Outcome:</strong> Migrated ~75 devices, decommissioned outdated hardware, and completed the rollout within 4 months.</p>
         </div>
 
-        <div class="card timeline-item">
-          <h2>Events Engineer (Contract)</h2>
-          <p class="muted">March 2019 – May 2019</p>
-          <ul>
-            <li>Delivered technical support for VR installations at a show home exhibition.</li>
-            <li>Set up and maintained VR headset systems for public use.</li>
-            <li>Troubleshot hardware, connectivity and signal issues in a live environment.</li>
-            <li>Diagnosed and resolved interference affecting signal stability.</li>
-            <li>Ensured systems remained operational throughout the event.</li>
-            <li>Provided on-site support and rapid issue resolution.</li>
-          </ul>
+        <div class="card">
+          <h3>Mobile Device Management (iOS & Android)</h3>
+          <p><strong>Environment:</strong> Intune, Apple Business Manager</p>
+          <p><strong>Problem:</strong> Required structured mobile deployment across two organisations within a single tenant.</p>
+          <p><strong>What I did:</strong> Designed enrolment profiles for Android (fully managed & BYOD) and configured Apple Business Manager for automated iOS deployment.</p>
+          <p><strong>Outcome:</strong> Delivered a scalable and automated mobile device management platform with improved security and consistency.</p>
         </div>
 
-        <div class="card timeline-item">
-          <h2>Charlton Networks</h2>
-          <p><strong>IT Support Engineer (1st / 2nd Line)</strong></p>
-          <p class="muted">January 2011 – January 2019</p>
-          <ul>
-            <li>Delivered 1st and 2nd line support across desktop, server and networking environments.</li>
-            <li>Managed tickets from triage through to resolution.</li>
-            <li>Supported endpoint, infrastructure and customer-facing IT work.</li>
-          </ul>
+        <div class="card">
+          <h3>Helpdesk System & Workflow Implementation</h3>
+          <p><strong>Environment:</strong> Microsoft 365, MSP Manager</p>
+          <p><strong>Problem:</strong> Legacy ticketing relied on manual email-based processes.</p>
+          <p><strong>What I did:</strong> Implemented a new helpdesk platform, configured SLAs and dashboards, and built a Microsoft Forms + Power Automate workflow for structured ticket creation.</p>
+          <p><strong>Outcome:</strong> Delivered a fully functional ticketing system with improved visibility, automation, and user adoption.</p>
         </div>
 
       </div>
     </section>
 
+    <!-- Technical Stack -->
     <section class="section section-alt">
       <div class="container narrow">
-        <h2>Technical stack</h2>
+        <h2>Technical Stack</h2>
         <div class="grid two-up compact-grid">
           <div class="card"><strong>Microsoft 365</strong><p>Exchange Online, Teams, SharePoint</p></div>
           <div class="card"><strong>Identity</strong><p>Entra ID, MFA, Conditional Access, Azure AD Connect</p></div>
@@ -102,6 +97,7 @@
         </div>
       </div>
     </section>
+
   </main>
 
   <footer class="site-footer">
