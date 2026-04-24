@@ -375,3 +375,156 @@ h3 { font-size: 1.1rem; margin-bottom: 0.5rem; }
     height: 220px;
   }
 }
+/* CV Page */
+.cv-page {
+  padding: 40px 20px;
+}
+
+.cv-actions {
+  max-width: 900px;
+  margin: 0 auto 24px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.button.secondary {
+  border: 1px solid rgba(255,255,255,0.2);
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+.cv-document {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #ffffff;
+  color: #111827;
+  padding: 48px;
+  border-radius: 12px;
+  line-height: 1.45;
+}
+
+.cv-document a {
+  color: #0f5fa8;
+}
+
+.cv-header {
+  border-bottom: 2px solid #111827;
+  padding-bottom: 14px;
+  margin-bottom: 24px;
+}
+
+.cv-header h1 {
+  margin: 0 0 6px;
+  font-size: 34px;
+}
+
+.cv-header p {
+  margin: 4px 0;
+}
+
+.cv-section {
+  margin-bottom: 24px;
+}
+
+.cv-section h2 {
+  font-size: 18px;
+  margin: 0 0 10px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #d1d5db;
+  color: #111827;
+}
+
+.cv-role {
+  margin-bottom: 18px;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.cv-role h3 {
+  margin: 0 0 3px;
+  font-size: 16px;
+}
+
+.cv-role p {
+  margin: 4px 0 8px;
+}
+
+.cv-document ul {
+  margin: 8px 0 0 20px;
+  padding: 0;
+}
+
+.cv-document li {
+  margin-bottom: 4px;
+}
+
+.cv-skill-list {
+  columns: 2;
+  column-gap: 32px;
+}
+
+.avoid-break {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+@media print {
+  body {
+    background: #ffffff !important;
+  }
+
+  .no-print,
+  .site-header,
+  .site-footer {
+    display: none !important;
+  }
+
+  .cv-page {
+    padding: 0;
+  }
+
+  .cv-document {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    color: #000000;
+  }
+
+  .cv-header h1 {
+    font-size: 28px;
+  }
+
+  .cv-section {
+    margin-bottom: 16px;
+  }
+
+  .cv-section h2 {
+    font-size: 15px;
+  }
+
+  .cv-role h3 {
+    font-size: 14px;
+  }
+
+  .cv-document {
+    font-size: 11px;
+    line-height: 1.35;
+  }
+
+  .cv-skill-list {
+    columns: 2;
+  }
+
+  a {
+    color: #000000 !important;
+    text-decoration: none;
+  }
+
+  @page {
+    margin: 14mm;
+  }
+}
