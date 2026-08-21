@@ -3,65 +3,189 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Contact Will Perry at PezTech." />
+
+  <meta
+    name="description"
+    content="Contact Will Perry - Modern Workplace and Microsoft 365 Engineer based in Cheltenham, UK."
+  />
+
   <title>PezTech | Contact</title>
+
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
+
+  <!-- Header -->
   <header class="site-header">
     <div class="container nav-wrap">
+
       <a class="brand" href="index.html">PezTech</a>
-      <nav>
+
+      <nav aria-label="Main navigation">
         <ul class="nav">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="experience.html">Experience</a></li>
           <li><a href="cv.html">CV</a></li>
-          <li><a href="contact.html" class="active">Contact</a></li>
+          <li>
+            <a href="contact.html" class="active" aria-current="page">
+              Contact
+            </a>
+          </li>
         </ul>
       </nav>
+
     </div>
   </header>
 
+
+  <!-- Main Content -->
   <main>
+
+    <!-- Page Header -->
     <section class="page-header">
       <div class="container narrow">
+
         <p class="eyebrow">Contact</p>
+
         <h1>Get in touch</h1>
-        <p class="lead">For roles, freelance enquiries or general contact.</p>
+
+        <p class="lead">
+          I'm interested in opportunities focused on Modern Workplace,
+          Microsoft 365, endpoint management and identity engineering.
+        </p>
+
       </div>
     </section>
 
+
+    <!-- Contact -->
     <section class="section">
       <div class="container narrow">
-        <div class="card contact-card">
-          <h2>Contact details</h2>
-          <p><strong>Email:</strong> <a href="mailto:will@peztech.org">will@peztech.org</a></p>
-          <p><strong>Phone:</strong> <a href="tel:07508349461">07508 349461</a></p>
-          <p><strong>Location:</strong> Cheltenham, UK</p>
-          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/will-perry-825aba103/" target="_blank" rel="noopener">View profile</a></p>
+
+        <div class="grid two-up">
+
+          <!-- Contact Details -->
+          <div class="card contact-card">
+
+            <h2>Contact details</h2>
+
+            <p>
+              <strong>Email:</strong><br />
+              <a href="mailto:will@peztech.org">
+                will@peztech.org
+              </a>
+            </p>
+
+            <p>
+              <strong>Phone:</strong><br />
+              <a href="tel:+447508349461">
+                07508 349461
+              </a>
+            </p>
+
+            <p>
+              <strong>Location:</strong><br />
+              Cheltenham, Gloucestershire, UK
+            </p>
+
+            <p>
+              <strong>LinkedIn:</strong><br />
+              <a
+                href="https://www.linkedin.com/in/will-perry-825aba103/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View LinkedIn profile
+              </a>
+            </p>
+
+          </div>
+
+
+          <!-- Areas of Interest -->
+          <div class="card">
+
+            <h2>Areas of interest</h2>
+
+            <ul class="clean-list">
+              <li>Modern Workplace engineering</li>
+              <li>Microsoft 365 engineering</li>
+              <li>Microsoft Intune and endpoint management</li>
+              <li>Windows Autopilot and modern device provisioning</li>
+              <li>Microsoft Entra ID and identity &amp; access management</li>
+              <li>Endpoint and Microsoft 365 security</li>
+              <li>PowerShell automation and technical project delivery</li>
+            </ul>
+
+          </div>
+
         </div>
 
-        <div class="card">
-          <h2>Areas of interest</h2>
-          <ul>
-            <li>Senior IT support roles</li>
-            <li>Microsoft 365 and Intune-focused positions</li>
-            <li>Project delivery and endpoint management work</li>
-            <li>SME and MSP environments</li>
-          </ul>
+
+        <!-- Working Style -->
+        <div class="card top-gap">
+
+          <h2>What I'm looking for</h2>
+
+          <p>
+            I'm particularly interested in hands-on engineering positions
+            where I can work deeply with Microsoft 365, Intune, Entra ID,
+            Windows endpoint management and associated security technologies.
+          </p>
+
+          <p>
+            I'm comfortable working independently and taking ownership of
+            technical delivery, while being part of a wider engineering,
+            architecture or Modern Workplace team.
+          </p>
+
+          <p>
+            My background includes both internal IT and MSP environments,
+            combining technical project delivery, complex troubleshooting,
+            stakeholder engagement and operational support.
+          </p>
+
+          <div class="button-row">
+
+            <a class="button" href="cv.html">
+              View CV
+            </a>
+
+            <a class="button secondary" href="experience.html">
+              View Selected Work
+            </a>
+
+          </div>
+
         </div>
+
       </div>
     </section>
+
   </main>
 
+
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-wrap">
-      <p>© <span id="year"></span> PezTech</p>
-      <p><a href="mailto:will@peztech.org">will@peztech.org</a></p>
+
+      <p>
+        © <span id="year"></span> PezTech
+      </p>
+
+      <p>
+        <a href="mailto:will@peztech.org">
+          will@peztech.org
+        </a>
+      </p>
+
     </div>
   </footer>
 
+
   <script src="script.js"></script>
+
 </body>
 </html>
